@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Digital Clock</title>
+     <style>
+          *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+          }
+          html,body{
+               width: 100%;
+               height: 100vh;
+               display: flex;
+               background: url(./Assets/background.avif);
+               background-position: center;
+               background-size: cover;
+               background-repeat: no-repeat;
+               justify-content: center;
+               align-items: center;
+
+          }
+          @font-face {
+               font-family: 'Digital-7';
+               src: url(Assets/Fonts/digital-7.ttf);
+          }
+          .clock{
+               width: 60%;
+               height: 30%;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               position: relative;
+               background-color: rgba(240, 240, 240, 0.3);
+               border-radius: 18px;
+          }
+          span{
+               font-size: 7em;
+               font-family: 'Digital-7', sans-serif;
+               color: #fff;
+          }
+          @media (max-width: 950px) {
+               span{
+                    font-size: 6em;
+                    transition: .5s;
+
+               }
+          }
+          @media (max-width: 850px) {
+               span{
+                    font-size: 5em;
+                    transition: .5s;
+
+               }
+          }
+          @media (max-width: 750px) {
+               span{
+                    font-size: 4em;
+                    transition: .5s;
+
+               }
+          }
+          @media (max-width: 650px) {
+               span{
+                    font-size: 3.5em;
+                    transition: .5s;
+
+               }
+               .clock{
+                    height: 20%;
+                    transition: .5s;
+               }
+          }
+          @media (max-width: 550px) {
+               span{
+                    font-size: 3em;
+                    transition: .5s;
+
+               }
+               .clock{
+                    width: 80%;
+                    transition: .5s;
+               }
+          }
+
+
+     </style>
+</head>
+<body>
+     <div class="clock">
+          <span></span>
+     </div>
+     <script src="./app.js"></script>
+</body>
+</html>
